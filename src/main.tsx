@@ -3,11 +3,14 @@ import Provider from "./Provider"
 import Router from "./Router"
 import Container from "./Container"
 import "./styles/styles.css"
+import { Auth } from "./Auth"
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Provider>
     <Container>
-      <Router />
+      <Auth>
+        <Router />
+      </Auth>
     </Container>
   </Provider>
 )
